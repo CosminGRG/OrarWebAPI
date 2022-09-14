@@ -152,7 +152,7 @@ class UserRepository {
         path: "orar",
       });
 
-      if (user.orar !== null) {
+      if (user.orar !== undefined) {
         await OrarModel.deleteOne({ _id: user.orar.id });
       }
 
